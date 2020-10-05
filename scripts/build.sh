@@ -1,3 +1,3 @@
 #! /bin/bash
 
-sudo docker build -t localhost:8082/challenge-3 .
+sudo docker build -t localhost:8082/challenge-3:${BUILD_NUMBER} .
