@@ -1,0 +1,15 @@
+pipeline {
+	agent any
+	stages {
+		stage('Pull'){
+			steps{
+				sh './scripts/pull.sh'
+			}
+		}
+		stage('Run Container'){
+			steps{
+				sh './scripts/run.sh'
+			}
+		}
+	}
+}
